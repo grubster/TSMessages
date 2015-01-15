@@ -1,38 +1,19 @@
-#
-# Be sure to run `pod lib lint TSMessage.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "TSMessage"
   s.version          = "0.1.0"
-  s.summary          = "A short description of TSMessage."
-  s.description      = <<-DESC
-                       An optional longer description of TSMessage
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/TSMessage"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.summary          = "Easy to use and customizable messages/notifications for iOS à la Tweetbot"
+  s.homepage         = "https://github.com/KrauseFx/TSMessages"
   s.license          = 'MIT'
-  s.author           = { "Pedro Souza" => "pedronicholas.souza@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/TSMessage.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Felix Krause" => "github@krausefx.com" }
+  s.source           = { :git => "https://github.com/pedronsouza/TSMessage.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
-  s.requires_arc = true
+  s.platform     = :ios
+  s.requires_arc = false
 
-  s.source_files = 'Pod/Classes'
+  s.source_files = 'Pod/Classes/*.{h,m}', 'Pod/Classes/**/*.{h,m}'
+  s.public_header_files = 'Pod/Classes/*.h', 'Pod/Classes/**/*.h'
   s.resource_bundles = {
-    'TSMessage' => ['Pod/Assets/*.png']
+    'TSMessage' => ['Pod/Assets/*.png', 'Pod/Assets/*.json']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
 end
