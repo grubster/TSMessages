@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
-  s.name             = "TSMessage"
+  s.name             = "TSMessages"
   s.version          = "0.1.0"
   s.summary          = "Easy to use and customizable messages/notifications for iOS à la Tweetbot"
   s.homepage         = "https://github.com/KrauseFx/TSMessages"
   s.license          = 'MIT'
   s.author           = { "Felix Krause" => "github@krausefx.com" }
-  s.source           = { :git => "https://github.com/pedronsouza/TSMessage.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/pedronsouza/TSMessages.git", :tag => s.version.to_s }
 
   s.platform     = :ios
   s.requires_arc = false
